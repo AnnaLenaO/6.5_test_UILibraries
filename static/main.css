@@ -658,3 +658,9 @@ main {
   padding: 3px;
   margin: 10px 0;
 }
+
+.signin {
+  background-color: #333333;
+  height: 100%;
+  width: 100%;
+}

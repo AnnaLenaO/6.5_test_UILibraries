@@ -1,7 +1,7 @@
 {
   "name": "a4_biografsajt",
   "version": "1.0.0",
-  "description": "",
+  "description": "GET /api/movies/:id/screenings\r This endpoint retrieves all future screenings for a specific movie.",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -31,5 +31,8 @@
     "handlebars": "^4.7.7",
     "node-fetch": "^3.1.1",
     "xss": "^1.0.14"
+  },
+  "directories": {
+    "test": "tests"
   }
 }
