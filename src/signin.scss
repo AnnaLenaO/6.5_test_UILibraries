@@ -11,6 +11,7 @@
     background-color: $colorFive;
     height: fit-content;
     width: 80%;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,21 +20,26 @@
     padding: 3rem;
   }
 
-  &__headline{
+  &__headline {
     margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
-    &__form{
-      height: fit-content;
-      width: 80%;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
+  &__form {
+    height: fit-content;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 
-  &__buttonLabel{
-    width: 54%;
+  &__text {
+    margin-top: 3rem;
+  }
+
+  &__buttonLabel {
+    width: 45%;
     align-items: left;
     color: $colorThree;
     font-weight: bold;
@@ -58,21 +64,21 @@
   --md-outlined-text-field-outline-width: 2dp;
 }
 
-md-outlined-text-field{
+md-outlined-text-field {
   padding: 10px;
   width: 60%;
 }
 
-md-filled-button{
+md-filled-button {
   padding: 16px;
   width: 57%;
   margin: 15px;
   font-size: larger;
 }
 
-md-outlined-button{
+md-outlined-button {
   padding: 16px;
-  width: 57%;
+  width: 46%;
   margin-top: 5px;
   font-size: larger;
 }

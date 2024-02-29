@@ -7,56 +7,85 @@
     <title>Kino Göteborg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
-    <!--<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>-->
+    <!--<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">-->
     <script src="/static/menu.js" type="module" defer></script>
-    <!--<script src="./login.js" type="module"></script>
-    <script src="./bundle.js"></script>-->
+    <script src="/static/member.js" type="module" defer></script>
+    <!--<script src="./bundle.js"></script>-->
     <!---------------------------------------------------------------------->
     <script src="https://esm.run/@material/web/all.js" type="module"></script>
-
 </head>
 
 <body>
-    
-    <!--<button class="mdc-button foo-button">
-        <div class="mdc-button__ripple"></div>
-        <span class="mdc-button__label">Button</span>
-      </button>-->
-    <div class="signin">
-        <section class="signin__area">
-            <a href="/"><img
-                src="../static/assets/headerLogo.png"
-                alt="Header Logo"
-                class="header__logo"
-              /></a>
+    <header class="header">
+        <div class="header__container">
+            <a href="/"><img src="../static/assets/headerLogo.png" alt="Header Logo" class="header__logo" /></a>
+            <nav class="header__topNavigation">
+                <a href="#" class="header__link">Movies</a>
+                <a href="#" class="header__link">About us</a>
+                <a href="#" class="header__link">News & events</a>
+            </nav>
+            <img src="../static/assets/hamburgerButtonOpen.png" class="header__hamburgerButtonOpen"
+                alt="Hamburger menu open button" />
+        </div>
+        <nav class="header__hamburgerMenuContainer">
+            <div class="header__hamburgerMenu">
+                <a href="#" class="header__link">Movies</a>
+                <a href="#" class="header__link">About us</a>
+                <a href="#" class="header__link">News & events</a>
+                <img src="../static/assets/hamburgerButtonClose.png" class="header__hamburgerCloseButton"
+                    alt="Hamburger menu close button" />
+            </div>
+        </nav>
+    </header>
 
-            <h1 class="signin__headline">Sign in</h1>
+    <main>
+        <div class="signin">
+            <section class="signin__area">
 
-        <md-outlined-text-field label="Username" type= "username" role="textbox" aria-label="Username">
-        </md-outlined-text-field>
+                <h1 class="signin__headline">Sign in</h1>
 
-        <md-outlined-text-field label="Password" type="password" role="textbox" aria-label="Password" alert
-            alert-text="Not a valid password">>
-            <!--<md-icon-button toggle slot="trailing-icon">
-                <md-icon>visibility</md-icon>
-                <md-icon slot="selected">visibility_off</md-icon>-->
-            </md-icon-button>
-        </md-outlined-text-field>
+                <form class="signin__form" action="./memberPage.html">
+                    <md-outlined-text-field label="Username" type="username" role="textbox" aria-label="Username"
+                        required>
+                    </md-outlined-text-field>
 
-       <!-- <label>
-            Material 3
-            <md-checkbox checked></md-checkbox>
-            maxlength="15"
-        </label> -->
+                    <md-outlined-text-field label="Password" type="password" role="textbox" aria-label="Password" alert
+                        alert-text="Not a valid password" required>
+                    </md-outlined-text-field>
 
-        <!--<md-outlined-button>Back</md-outlined-button>-->
-        <md-filled-button href="./memberPage.html">Sign in</md-filled-button>
-        <span class="signin__buttonLabel">Not a meber?</span>
-        <md-outlined-button href="./signUp.html">Sign up</md-outlined-button>
-    </section>
-    </div>
+                    <!--<md-filled-button href="./memberPage.html">Sign in</md-filled-button>-->
+                    <md-filled-button type="submit" value="submit">Sign in</md-filled-button>
+                </form>
+
+                <span class="signin__buttonLabel">Not a member?</span>
+                <md-outlined-button href="./signUp.html">Sign up</md-outlined-button>
+
+                <a href="/" class="signin__text">Cancel</a>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer_logoContainer">
+                <a href="/"><img src="../static/assets/footerLogo.png" alt="Footer Logo" class="footer__logo" /></a>
+            </div>
+            <div class="footer__firstContainer">
+                <h3 class="footer__heading">Kino Göteborg</h3>
+                <p class="footer__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet, nisl id consequat
+                    tempor, erat dui rhoncus nisl, vel pretium lacus enim vitae ligula.
+                </p>
+            </div>
+            <div class="footer__secondContainer">
+                <h3 class="footer__heading">Navigation</h3>
+                <a href="#" class="footer__link">Movies</a>
+                <a href="#" class="footer__link">About us</a>
+                <a href="#" class="footer__link">News & events</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
