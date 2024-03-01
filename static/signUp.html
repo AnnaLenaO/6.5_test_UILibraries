@@ -60,8 +60,10 @@
                         required>
                     </md-outlined-text-field>
 
-                    <md-outlined-text-field label="Password" type="password" role="textbox" aria-label="Password"
-                        required>
+                    <md-outlined-text-field class="signup__password" label="Password" type="password" role="textbox"
+                        supporting-text="8-15 characters, least one digit, special character & lower- & uppercase"
+                        pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&])[A-Za-z\d@.#$!%*?&]{8,15}"
+                        aria-label="Password" required>
                     </md-outlined-text-field>
 
                     <!-- For Terms & Conditions

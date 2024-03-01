@@ -64,6 +64,14 @@
   --md-outlined-text-field-outline-width: 2dp;
 }
 
+.valid {
+  --md-outlined-text-field-outline-color: #008000;
+  }
+
+.invalid {
+  --md-outlined-text-field-outline-color: #b3261e;
+}
+
 md-outlined-text-field {
   padding: 10px;
   width: 60%;
