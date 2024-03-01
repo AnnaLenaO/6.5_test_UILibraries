@@ -82,3 +82,28 @@ md-outlined-button {
   margin-top: 5px;
   font-size: larger;
 }
+
+.member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  background-color: $colorTwo;
+  font-size: 30px;
+
+  &__username {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-right: 20px;
+    font-size: 24px;
+    font-weight: 500;
+    color: $colorFive;
+      }
+
+      &__firstName{
+        margin-top: 1rem;
+        font-size: 35px;
+      }
+}

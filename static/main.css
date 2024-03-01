@@ -735,3 +735,26 @@ md-outlined-button {
   margin-top: 5px;
   font-size: larger;
 }
+
+.member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  background-color: #404040;
+  font-size: 30px;
+}
+.member__username {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: right;
+  padding-right: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.member__firstName {
+  margin-top: 1rem;
+  font-size: 35px;
+}

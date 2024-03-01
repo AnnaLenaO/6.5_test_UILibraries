@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Kino Göteborg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="The member page for a signed in member of Kino Göteborg" />
     <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
     <script src="/static/menu.js" type="module" defer></script>
-    <!--<script src="/static/member.js" type="module" defer></script>-->
+    <script src="/static/memberPage.js" type="module" defer></script>
     <script src="https://esm.run/@material/web/all.js" type="module"></script>
 </head>
 
@@ -30,18 +31,22 @@
                 <a href="#" class="header__link">Movies</a>
                 <a href="#" class="header__link">About us</a>
                 <a href="#" class="header__link">News & events</a>
+                <a href="/" class="header__link">Sign out</a>
                 <img src="../static/assets/hamburgerButtonClose.png" class="header__hamburgerCloseButton"
                     alt="Hamburger menu close button" />
             </div>
         </nav>
     </header>
+    <div class="member">
+        <span class="member__username"></span>
+    </div>
 
     <main>
         <div class="signin">
             <section class="signin__area">
                 <h1 class="member__headline">Welcome</h1>
 
-
+                <p class="member__firstName"></p>
 
             </section>
         </div>
@@ -53,7 +58,7 @@
                 <a href="/"><img src="../static/assets/footerLogo.png" alt="Footer Logo" class="footer__logo" /></a>
             </div>
             <div class="footer__firstContainer">
-                <h3 class="footer__heading">Kino Göteborg</h3>
+                <h2 class="footer__heading">Kino Göteborg</h2>
                 <p class="footer__text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc laoreet, nisl id consequat
                     tempor, erat dui rhoncus nisl, vel pretium lacus enim vitae ligula.
