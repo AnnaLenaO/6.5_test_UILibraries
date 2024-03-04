@@ -9,7 +9,8 @@
     <meta name="description" content="The member page for a signed in member of Kino Göteborg" />
     <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css" />
     <script src="/static/menu.js" type="module" defer></script>
-    <!--<script src="/static/memberPage.js" type="module" defer></script>-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/static/memberPage.js" type="module" defer></script>
 </head>
 
 <body>
@@ -20,7 +21,14 @@
                 <a href="#" class="header__link">Movies</a>
                 <a href="#" class="header__link">About us</a>
                 <a href="#" class="header__link">News & events</a>
-                <a href="/" class="header__link">Sign out</a>
+                <a href="/">
+                    <p class="text-sm leading-6 text-white">
+                        <strong class="font-semibold">Sign out</strong>
+                    </p>
+                    <p id= "memberUsername" class="text-sm leading-6 text-white">
+                        <strong class="font-semibold"></strong>
+                    </p>
+                </a>
             </nav>
             <img src="../static/assets/hamburgerButtonOpen.png" class="header__hamburgerButtonOpen"
                 alt="Hamburger menu open button" />
@@ -40,14 +48,77 @@
         <span class="member__username"></span>
     </div>
 
+    <div
+        class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
+        <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+            aria-hidden="true">
+            <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+                style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
+            </div>
+        </div>
+        <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
+            aria-hidden="true">
+            <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+                style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
+            </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
+            <p class="text-sm leading-6 text-gray-900">
+                <strong class="font-semibold">Summer Film Festival 2024</strong><svg viewBox="0 0 2 2"
+                    class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
+                    <circle cx="1" cy="1" r="1" />
+                </svg>Join us in Gothenburg from June 7 – 9.
+            </p>
+            <a href="#"
+                class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Tickets
+                <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <div class="flex flex-1 justify-end">
+            <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
+                <span class="sr-only">Dismiss</span>
+                <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path
+                        d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
     <main>
-        <div class="signin">
-            <section class="signin__area">
-                <h1 class="member__headline">Welcome</h1>
-
-                <p class="member__firstName"></p>
-
-            </section>
+        <div class="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8">
+            <div
+                class="relative isolate overflow-hidden bg-gray-900 px-6 pt-16 shadow-2xl sm:rounded-3xl sm:px-16 md:pt-24 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0">
+                <svg viewBox="0 0 1024 1024"
+                    class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:left-full sm:-ml-80 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 lg:translate-y-0"
+                    aria-hidden="true">
+                    <circle cx="512" cy="512" r="512" fill="url(#759c1415-0410-454c-8f7c-9a820de03641)"
+                        fill-opacity="0.7" />
+                    <defs>
+                        <radialGradient id="759c1415-0410-454c-8f7c-9a820de03641">
+                            <stop stop-color="#7775D6" />
+                            <stop offset="1" stop-color="#E935C1" />
+                        </radialGradient>
+                    </defs>
+                </svg>
+                <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                    <p id="memberFirstName" class="mt-6 text-lg leading-8 text-gray-300">Alvin</p>
+                    <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Get your bonus.<br>500 extra
+                        points today.</h2>
+                    <p class="mt-6 text-lg leading-8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed
+                        consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                        <a href="#"
+                            class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Book
+                            a movie</a>
+                        <a href="#" class="text-sm font-semibold leading-6 text-white">Invite a friend <span
+                                aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+                <div class="relative mt-16 h-80 lg:mt-8">
+                    <img class="absolute left-0 top-0 w-[57rem] max-w-none rounded-md bg-white/5 ring-1 ring-white/10"
+                        src="../static/assets/redKino.png" alt="red kino saloon" width="1824" height="1080">
+                </div>
+            </div>
         </div>
     </main>
 
