@@ -1,10 +1,12 @@
 <section class="movieContainer">
   <h1>Movies currently showing at the theater.</h1>
   {{#each movies}}
+  <ul>
     <li class="movieContainer__movieLink">
       <a href="/movies/{{this.id}}">
         {{this.title}}
       </a>
     </li>
+  </ul>
   {{/each}}
 </section>

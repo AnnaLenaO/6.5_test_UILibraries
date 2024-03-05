@@ -45,6 +45,7 @@ function createInfoContainer(informationFeed) {
   const picture = document.createElement("img");
   picture.src = informationFeed.image;
   picture.classList.add("news__containerCard--image");
+  picture.setAttribute("alt", "Image of one news item");
   card.appendChild(picture);
 
   const box = document.createElement("div");
@@ -102,6 +103,7 @@ function openModal(informationFeed) {
   const picture = document.createElement("img");
   picture.src = informationFeed.image;
   picture.classList.add("newsOverlay__modal--image");
+  picture.setAttribute("alt", "Image of one event item");
   modal.appendChild(picture);
 
   const title = document.createElement("h3");
